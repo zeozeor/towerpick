@@ -1,0 +1,32 @@
+//구매가능여부 (yesorNo), 예상결제금액 (Price1)
+.status {
+  max-height: 45px;
+  .or,
+  .price {
+    height: 35px;
+  }
+}
+
+// 주차장 이미지
+.parking-img {
+  width: 372px;
+  height: 179px;
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  img {
+    flex: 0 0 auto;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid $color-darkgray();
+    border-radius: 10px;
+  }
+}

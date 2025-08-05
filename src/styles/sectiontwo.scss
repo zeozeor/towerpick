@@ -1,0 +1,26 @@
+//예약 / 정기권
+.section-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  text-align: center;
+  button {
+    @include btn-style;
+    width: 67px;
+    height: 29px;
+    margin: 10px auto;
+    padding: 0;
+    @include font-basic;
+  }
+  .reservation,
+  .ticket {
+    width: 176px;
+    height: 150px;
+    padding: 10px;
+    background-color: $color-sub;
+    color: $font-color;
+    border-radius: 10px;
+  }
+}

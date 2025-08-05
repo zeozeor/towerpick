@@ -1,0 +1,25 @@
+//seasonbox1
+.season-select {
+  width: 230px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.season-select .period-btn {
+  width: 50px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: $font-color;
+  color: $color-darkgray;
+  @include font-small();
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.season-select .period-btn.selected,
+.season-select .period-btn:active {
+  background-color: $color-darkgray;
+  color: $font-color;
+}

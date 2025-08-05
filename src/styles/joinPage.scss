@@ -1,0 +1,114 @@
+.join-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .join-btn {
+        margin-top: 20px;
+        @include btn-style();
+    }
+    .join-title {
+        width: 372px;
+        text-align: center;
+        hr {
+            margin-top: 20px;
+            border: 2px solid $color-main;
+        }
+    }
+    .join-wrap {
+        width: 372px;
+        height: 490px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $color-black;
+        label {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            span {
+                @include font-medium;
+            }
+            input {
+                padding: 10px;
+                border: 3px solid $color-sub;
+                border-radius: 10px;
+                outline: none;
+                @include font-basic;
+            }
+        }
+        .password-coment {
+            width: 100%;
+            text-align: right;
+            margin-right: 2rem;
+            @include font-basic;
+        }
+    }
+}
+
+// .join-page{
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   // position: relative;
+//   input {
+//     appearance: none;
+//     width: 100%;
+//     margin-top: 5px;
+//     border: 3PX solid $color-sub;
+//     border-radius: 10px;
+//     outline: none;
+//     padding: 0.5rem;
+//     @include font-basic
+//   }
+// }
+
+// .join-title{
+//   width: 100%;
+//   margin: 0 auto;
+//   text-align: center;
+//   h3{
+//     margin-top: 3rem;
+//     @include font-medium;
+//   }
+//   hr{
+//     margin-top: 3rem;
+//     border: 2px solid $color-main;
+//   }
+// }
+
+// .join-wrap{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 100%;
+//   padding: 0 20px;
+//   @include font-medium;
+//   color: $color-black;
+//   label{
+//     width: 95%;
+//     margin-top: 1.3rem;
+//   }
+//   p{
+//     width: 100%;
+//     text-align: right;
+//     margin-top: 2px;
+//     margin-right: 2rem;
+//     @include font-basic;
+//   }
+// }
+
+// .join-btn{
+// position: absolute;
+// bottom: 2rem;
+// left: 50%;
+// transform: translateX(-50%);
+//   @include btn-style;
+// }

@@ -1,0 +1,39 @@
+.start-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px; 
+  margin-top: 60px;
+  text-align: center;
+
+  .logo {
+    width: 280px;
+    margin-bottom: -30px;
+  }
+
+  .main-image {
+    width: 320px;
+    margin-bottom: 15px;
+  }
+
+  .welcome-text {
+    margin-bottom: 50px;
+
+    h1 {
+      @include font-large;
+      color: $color-black;
+      margin-bottom: 35px;
+    }
+
+    p {
+      @include font-medium;
+      color: $color-black;
+    }
+  }
+
+  .start-button {
+    @include btn-style();
+  }
+}
+

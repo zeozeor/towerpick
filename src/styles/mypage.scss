@@ -1,0 +1,197 @@
+.page-wrap{
+  // height: 100vh;
+}
+.my-page{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.my-modify{
+  width: 372px;
+  background-color: $color-sub;
+  color: $font-color;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  ul{
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+}
+
+.my-txt,
+.pass-txt{
+  border-bottom: 1px solid $color-darkgray;
+  h3{
+    padding-bottom: 5px;
+    padding-left: 10px;
+    @include font-medium;
+  }
+}
+.my-txt{
+  width: 105px;
+}
+.pass-txt{
+  width: 131px;
+}
+
+.list-one{
+  li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-of-type(1){
+      padding-bottom: 10px;
+    }
+    &:nth-of-type(2),
+    &:nth-of-type(3){
+      padding-left: 1rem;
+    }
+  }
+}
+.list-two{
+  li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-of-type(1){
+      padding-bottom: 10px;
+    }
+  }
+}
+.modi-icon{
+  color: $color-darkgray;
+  cursor: pointer;
+}
+
+.my-pass{
+  width: 372px;
+  background-color: $color-sub;
+  color: $font-color;
+  padding: 20px 10px;
+  border-radius: 10px;;
+  margin: 20px 0;
+}
+
+.pass-buy{
+  margin-top: 20px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $font-color;
+  color: $color-darkgray;
+  border-radius: 10px;
+  @include font-basic;
+  p{
+    padding: 10px 0;
+  }
+  button{
+    margin-bottom: 10px;
+    width: 240px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: $color-darkgray;
+    color: $font-color;
+    border-radius: 10px;
+    @include font-basic;
+    transition: background-color 0.25s;
+    &:hover{
+      background-color: $color-main;
+      color: $color-black;
+    }
+  }
+}
+
+
+//** 정기권 목록 섹션
+.pass-listWrap{
+  position: relative;
+}
+.pass-list{
+  margin-top: 20px;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: $font-color;
+  color: $color-darkgray;
+  border-radius: 10px;
+  p{
+    &:nth-of-type(1){
+    font-weight: bolder;
+    padding-bottom: 3px;
+    }
+  }
+}
+
+//List 데이터
+.pass-list{
+  width: 352px;
+  height: 100px;
+  position: relative;
+  @include font-basic;
+  .pass-month{
+    position: absolute;
+    top: 30px;
+  }
+  .pass-date{
+    position: absolute;
+    top: 18px;
+    left: 100px;
+  }
+  .pass-price{
+    position: absolute;
+    top: 65px;
+    left: 100px;
+  }
+  .pass-status,
+  .passCancle-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 50px;
+    background-color: $color-darkgray;
+    color: $font-color;
+    border-radius: 10px;
+    position: absolute;
+    top: 26px;
+    right: 25px;
+    
+  }
+
+  // 예약 취소 버튼
+  .passCancle-btn{
+    outline: none;
+    border: none;
+    @include font-basic;
+    transition: background-color 0.25s;
+    &:hover{
+      background-color: $color-main;
+      color: $color-black;
+    }
+  }
+}
+
+.pass-1m,
+.pass-3m,
+.pass-6m,
+.pass-12m,
+.pass-end
+{
+  @include font-basic;
+  position: relative;
+}
+
+.no-pass-message{
+  text-align: center;
+  margin: 20px;
+}
+

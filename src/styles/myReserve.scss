@@ -1,0 +1,165 @@
+.reserve-wrap{
+  // height: 100vh;
+}
+.my-reserve{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+} 
+
+//** 예약 목록 섹션
+.now-list,
+.end-list{
+  width: 372px;
+  background-color: $color-sub;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.now-list{
+  margin: 20px 0;
+}
+.end-list{
+  margin-bottom: 20px;
+}
+
+.now-listWrap,
+.end-listWrap{
+  width: 352px;
+  height: 100px;
+  margin-top: 20px;
+  background-color: $font-color;
+  color: $color-darkgray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  p{
+    &:nth-of-type(1){
+    font-weight: bolder;
+    }
+  }
+  .now-space{
+    @include font-basic;
+  }
+}
+
+.now-txt,
+.end-txt{
+  width: 110px;
+  border-bottom: 1px solid $color-darkgray;
+  h3{
+    padding-bottom: 5px;
+    padding-left: 10px;
+    color: $font-color;
+    @include font-medium;
+  }
+}
+
+.now-reserve{
+  position: relative;
+  .now-status{
+    position: absolute;
+    left: 20px;
+  }
+  .now-date{
+    position: absolute;
+    top: 18px;
+    left: 85px;
+  }
+  .now-space{
+    position: absolute;
+    top: 65px;
+    left: 85px;
+  }
+  .now-status-r{
+    position: absolute;
+    right: 20px;
+  }
+  .nowCancle-btn{
+    width: 80px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: $color-darkgray;
+    color: $font-color;
+    border-radius: 10px;
+    position: absolute;
+    right: 15px;
+    @include font-basic;
+    transition: background-color 0.25s;
+    &:hover{
+      background-color: $color-main;
+      color: $color-black;
+    }
+  }
+}
+
+// 종료된 예약
+.end-reserve{
+  position: relative;
+  .end-workend{
+    position: absolute;
+    left: 15px;
+  }
+  .end-date{
+    position: absolute;
+    top: 18px;
+    left: 85px;
+  }
+  .end-space{
+    position: absolute;
+    top: 65px;
+    left: 85px;
+  }
+  .end-status{
+    width: 80px;
+    height: 50px;
+    background-color: $color-darkgray;
+    color: $font-color;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+  }
+}
+
+.not-booking{
+  margin-top: 20px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $font-color;
+  color: $color-darkgray;
+  border-radius: 10px;
+  @include font-basic;
+  p{
+    color: $color-darkgray;
+    text-align: center;
+  }
+  .not-booking-msn{
+    padding: 20px 0;
+  }
+  button{
+    margin-top: 10px;
+    width: 240px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: $color-darkgray;
+    color: $font-color;
+    border-radius: 10px;
+    transition: background-color 0.25s;
+    @include font-basic;
+    &:hover{
+      background-color: $color-main;
+      color: $color-black;
+    }
+  }
+}

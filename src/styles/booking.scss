@@ -1,0 +1,139 @@
+// 헤더&버튼
+.booking1,
+.booking2,
+.booking3 {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .booking-title {
+        text-align: center;
+        @include font-medium();
+    }
+    button {
+        @include btn-style();
+        margin-top: 20px;
+    }
+}
+
+// Step.js
+.step {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    @include font-basic();
+    > li {
+        padding: 5px 20px;
+        border-radius: 10px;
+    }
+    .active {
+        background-color: $color-main;
+    }
+}
+
+// BookingBox.js
+.booking-box {
+    width: 372px;
+    margin-top: 30px;
+    background-color: $color-sub;
+    border-radius: 10px;
+    padding: 10px 10px 5px;
+
+    .booking-title {
+        @include font-medium();
+        color: $font-color;
+        display: inline-block;
+        border-bottom: 1px solid $color-darkgray;
+        padding: 10px 10px 5px;
+    }
+
+    .booking-form {
+        margin-top: 20px;
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            .form-label {
+                @include font-basic();
+                color: $font-color;
+                margin-left: 20px;
+            }
+            p,
+            input.date,
+            select {
+                width: 230px;
+                height: 35px;
+                display: block;
+                text-align: center;
+                line-height: 35px;
+                border: none;
+                border-radius: 10px;
+                background-color: $font-color;
+                color: $color-darkgray;
+                @include font-small();
+            }
+        }
+    }
+}
+
+// YesorNo.js Price.js BookingPlace.js
+.status {
+    width: 372px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: $color-sub;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .label {
+        width: 95px;
+        @include font-basic();
+        color: $font-color;
+        margin-left: 20px;
+    }
+    .or,
+    .price,
+    .place {
+        width: 230px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: $font-color;
+        color: $color-darkgray;
+        @include font-basic();
+    }
+    .ment {
+        color: $color-darkgray;
+        @include font-basic();
+    }
+    .ment1 {
+        @include font-basic();
+        color: $color-error;
+    }
+}
+
+// Guide.js
+.guide {
+    padding: 10px;
+    margin: 20px 20px 0;
+    border-radius: 10px;
+    background-color: $color-sub;
+    color: $font-color;
+    @include font-small;
+    ul {
+        margin-top: 20px;
+        li {
+            margin-top: 10px;
+            word-break: keep-all;
+        }
+    }
+}

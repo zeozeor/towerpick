@@ -1,0 +1,44 @@
+.complete-all{
+    width: 100%;
+    height: 100%;
+}
+.cancel-complete {
+    width: 100%;
+    height: calc(80vh - 212px);
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .complete-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        padding: 50px 0 80px;
+        .complete-title {
+            @include font-large;
+        }
+        .check-icon-wrap {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: $color-main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .check-icon {
+                font-size: 100px;
+                color: $color-darkgray;
+            }
+        }
+        .complete-ment {
+            @include font-medium;
+        }
+    }
+    .complete-btn {
+        width: 100%;
+        margin: 0 auto;
+        @include btn-style();
+    }
+}
