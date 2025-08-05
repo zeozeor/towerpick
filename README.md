@@ -80,7 +80,7 @@
 
 ## 연락처
 - 프로젝트에 관한 문의사항이 있으시면 아래로 연락주세요:
-- https://junhyoung2.github.io/towerpick/
+- https://zeozeor.github.io/towerpick
 
 
 
